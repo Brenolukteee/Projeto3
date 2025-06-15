@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - Seed</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/quiz.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1><a href="index.html">🌱 Seed</a></h1>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Início</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="quiz-section">
+        <div class="container">
+          <div class="quiz-container">
+            <div class="quiz-header">
+              <div class="quiz-progress">
+                <div class="progress-bar">
+                  <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <span class="progress-text" id="progress-text"
+                  >Pergunta 1 de 5</span
+                >
+              </div>
+            </div>
+
+            <div class="quiz-content" id="quiz-content">
+              <!-- Quiz questions will be loaded here -->
+            </div>
+
+            <div class="quiz-results" id="quiz-results" style="display: none">
+              <div class="results-content">
+                <h2>🎉 Quiz Concluído!</h2>
+                <div class="score-display">
+                  <span class="score-number" id="final-score">0</span>
+                  <span class="score-total">de 5</span>
+                </div>
+                <p id="score-message"></p>
+                <div class="results-actions">
+                  <button class="retry-button" onclick="restartQuiz()">
+                    🔄 Refazer Quiz
+                  </button>
+                  <a href="index.html" class="home-button"
+                    >🏠 Voltar ao Início</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Seed. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seed - Educação Ambiental</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1>🌱 Seed</h1>
+        </div>
+        <div class="nav-links">
+          <a href="#posts">Artigos</a>
+          <a href="#quiz">Quiz</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Juntos por um planeta mais verde</h1>
+          <p>
+            Educação ambiental para uma consciência sustentável. Aprenda,
+            pratique e faça a diferença!
+          </p>
+          <a href="#posts" class="cta-button">Explorar Conteúdo</a>
+        </div>
+      </section>
+
+      <section id="posts" class="posts-section">
+        <div class="container">
+          <h2>Artigos Ambientais</h2>
+          <div class="posts-grid" id="posts-grid">
+            <!-- Posts will be loaded here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <section id="quiz" class="quiz-section">
+        <div class="container">
+          <h2>Quiz de Consciência Ambiental</h2>
+          <p>Teste seus conhecimentos sobre meio ambiente!</p>
+          <div class="quiz-card">
+            <div class="quiz-info">
+              <h3>🧠 Quiz Ambiental</h3>
+              <p>5 perguntas sobre sustentabilidade e meio ambiente</p>
+              <p>⏱️ Tempo estimado: 3 minutos</p>
+            </div>
+            <button class="quiz-button" onclick="startQuiz()">
+              Iniciar Quiz
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Seed. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

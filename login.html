@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Seed</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-brand">
+          <h1><a href="index.html">🌱 Seed</a></h1>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Início</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="login-section">
+        <div class="container">
+          <div class="login-card">
+            <div class="login-header">
+              <h2>🔐 Fazer Login</h2>
+              <p>Entre para acessar o quiz ambiental</p>
+            </div>
+            <form class="login-form" id="login-form">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <button type="submit" class="login-button">Entrar</button>
+              <div id="login-error" class="error-message" style="display: none">
+                Email ou senha incorretos!
+              </div>
+            </form>
+            <div class="login-demo">
+              <h4>Dados para teste:</h4>
+              <p><strong>Email:</strong> maria@email.com</p>
+              <p><strong>Senha:</strong> 123456</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Seed. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>
